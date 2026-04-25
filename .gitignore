@@ -1,0 +1,50 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+
+# --- Local config / secrets ---
+.env
+.env.local
+*.pem
+
+# --- Strategy state and outputs (runtime-generated) ---
+strategies/*/state.db
+strategies/*/state.db-journal
+strategies/*/*.bak
+backtests/
+logs/
+**/*_logistic.pkl
+**/*_xgb.pkl
+
+# --- IDE / editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Test / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Pre-built / bundled ---
+*.duckdb
+*.duckdb-wal

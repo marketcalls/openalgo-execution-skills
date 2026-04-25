@@ -1,0 +1,50 @@
+# OpenAlgo SDK with Numba-JIT indicators (openalgo.ta)
+openalgo[indicators]>=1.0.45
+
+# Backtesting engine
+vectorbt>=0.28.0
+
+# TA-Lib (optional - user can pick openalgo or talib at strategy creation)
+# Requires the TA-Lib C library installed system-wide:
+#   macOS: brew install ta-lib
+#   Ubuntu: sudo apt install libta-lib-dev
+#   Windows: pip install ta-lib (uses pre-built wheels)
+ta-lib>=0.4.28
+
+# Data + numerics
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+
+# Plotting (used by /algo-strategy backtest mode)
+plotly>=5.18
+nbformat>=5.9
+
+# Reporting
+quantstats>=0.0.62
+
+# WebSocket + HTTP (used by openalgo SDK internally; pinning here for clarity)
+websocket-client>=1.6
+httpx>=0.25
+
+# Scheduling (for time-based intraday entries like opening_range, straddle)
+APScheduler>=3.10
+pytz>=2024.1
+
+# State persistence
+# (sqlite3 is in stdlib)
+
+# ML strategy templates
+scikit-learn>=1.3
+xgboost>=2.0
+
+# Multi-strategy portfolio runner
+PyYAML>=6.0
+
+# .env loader
+python-dotenv>=1.0
+
+# Logging utilities (stdlib `logging` is sufficient; no extra deps)
+
+# Self-hosted /python compatibility (apscheduler, psutil) — listed for parity
+psutil>=5.9
